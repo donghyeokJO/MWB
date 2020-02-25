@@ -1,0 +1,20 @@
+.left_side_bar ul li.on>a::before {
+    width: 100%
+}
+
+.left_side_bar ul li.on>a::after {
+    -webkit-transform: translate(0%, 0) scale(1, 1);
+    transform: translate(0%, 0) scale(1, 1);
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loading_page {
+    display: none;
+}
+
+ul li a {
+    display: block !important;
+}

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="알트탭은 사용자에게 최적의 공간대여 및 예약 서비스를 제공합니다." />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="알트탭 | 공간소개">
+    <meta property="og:description" content="알트탭은 사용자에게 최적의 공간대여 및 예약 서비스를 제공합니다.">
+    <meta property="og:image" content="img/contact_img.png">
+    <meta property="og:url" content="https://www.makewebnbot.com//alttab/space_detail.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="알트탭 | 공간소개">
+    <meta name="twitter:description" content="알트탭은 사용자에게 최적의 공간대여 및 예약 서비스를 제공합니다.">
+    <meta name="twitter:image" content="img/contact_img.png">
+    <meta name="twitter:domain" content="https://www.makewebnbot.com//alttab/space_detail.html">
+    <title>알트탭 | 공간소개</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/space_detail.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans|Abril+Fatface&display=swap"
+        rel="stylesheet">
+    <link rel="canonical" href="http://www.makewebnbot.com//alttab/space_detail.html" />
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">if (!wcs_add) var wcs_add = {}; wcs_add["wa"] = "1433b9a1e0d13b"; wcs_do();</script>
+    <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-XXXXXXXX-X', 'auto'); ga('send', 'pageview');</script>
+</head>
+
+<body>
+    <div class="pc_wrap">
+        <!-- <div class="loading_page">
+            <div class="load_icon">
+                <img src="img/load_icon1.svg" width="30px" alt="로딩 아이콘">
+                <div class="load_filter"></div>
+            </div>
+            <div class="load_icon">
+                <img src="img/load_icon2.svg" width="30px" alt="로딩 아이콘">
+                <div class="load_filter"></div>
+            </div>
+            <div class="load_icon">
+                <img src="img/load_icon3.svg" width="30px" alt="로딩 아이콘">
+                <div class="load_filter"></div>
+            </div>
+            <div class="load_icon">
+                <img src="img/load_icon4.svg" width="30px" alt="로딩 아이콘">
+                <div class="load_filter"></div>
+            </div>
+        </div> -->
+        <div class="wrap">
+            <div class="left_menu_btn">
+                <img class="menu_open" onclick="left_menu_open(); footer_close();" src="img/left_menu_btn_b.svg"
+                    alt="좌측메뉴 아이콘">
+                <div class="menu_close" onclick="left_menu_close();">
+                    <div class="n1"></div>
+                    <div class="n2"></div>
+                </div>
+                <div class="menu_logo">
+                    <img src="img/logo2.svg" alt="로고 이미지">
+                </div>
+                <ul class="menu_list">
+                    <li>
+                        <a href="index.html">홈</a>
+                    </li>
+                    <li>
+                        <a href="intro.html">업체소개</a>
+                    </li>
+                    <li class="on">
+                        <a href="space.html">공간소개</a>
+                    </li>
+                    <li>
+                        <a href="guide.html">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="help.html">도움말</a>
+                    </li>
+                    <li>
+                        <a href="direction.html">오시는길</a>
+                    </li>
+                </ul>
+                <div class="left_menu_link">
+                    <div><a href="">예약하기</a></div>
+                    <div><a href="">예약현황</a></div>
+                </div>
+                <div class="left_bg_txt">
+                    ALTTAB
+                </div>
+            </div>
+            <div class="left_side_bar">
+                <ul>
+                    <li class="on">
+                        <a href="javascript:home();" data-hover="HOME"><span>HOME</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:space();" data-hover="SPACE"><span>SPACE</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:price();" data-hover="PRICE"><span>PRICE</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:satisfy();" data-hover="SATISFY"><span>SATISFY</span></a>
+                    </li>
+                    <li>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fixed_menu">
+                <div class="remote">
+                    <ul>
+                        <li>
+                            <p>QUICK<br>MENU</p>
+                        </li>
+                        <li>
+                            <div></div>
+                        </li>
+                        <li><a href=""><img src="img/remote_btn_1.svg" alt="예약하기 아이콘"><span>예약하기</span></a></li>
+                        <li><a href=""><img src="img/remote_btn_2.svg" alt="예약현황 아이콘"><span>예약현황</span></a></a></li>
+                        <li><a href=""><img src="img/remote_btn_3.svg" alt="문의하기 아이콘"><span>문의하기</span></a></a></li>
+                    </ul>
+                </div>
+                <div class="circle">
+                    <img src="img/circle2.svg" alt="시계 아이콘">
+                </div>
+            </div>
+            <div class="wrap_center">
+                <div class="logo">
+                    <a href="intro.html">
+                        <img src="img/logo2.svg" width="115" height="58.4" alt="로고 이미지">
+                    </a>
+                </div>
+                <div class="main_image">
+                    <img src="img/main_img2.png" alt="메인 이미지" width="100%" height="auto">
+                </div>
+                <div class="main_page_title">
+                    <h2>SPACE</h2>
+                </div>
+                <div class="main_txt_title">
+                    <div class="black">
+                        <h2>ALTTAP</h2>
+                    </div>
+                    <div class="white">
+                        <h2>ALTTAP</h2>
+                    </div>
+                </div>
+                <div class="gallery_area">
+                    <div class="gallery_tab">
+                        <!-- <div class="gallery_tab_btn">
+                            <div class="gallery_tab_btn_bg on"></div>
+                            <span>STUDIO</span>
+                        </div>
+                        <div class="gallery_tab_btn">
+                            <div class="gallery_tab_btn_bg"></div>
+                            <span>LOUNGE BAR</span>
+                        </div>
+                        <div class="gallery_tab_btn">
+                            <div class="gallery_tab_btn_bg"></div>
+                            <span>PARTY</span>
+                        </div>
+                        <div class="gallery_tab_btn">
+                            <div class="gallery_tab_btn_bg"></div>
+                            <span>CLASS</span>
+                        </div> -->
+                        <div class="gallery_tab_btn">
+                            <a href="#0" class="sm-link sm-link_bg sm-link10 gallery_tab_btn_bg on">
+                                <span class="sm-link__label">STUDIO</span>
+                            </a>
+                        </div>
+                        <div class="gallery_tab_btn">
+                            <a href="#0" class="sm-link sm-link_bg sm-link10 gallery_tab_btn_bg">
+                                <span class="sm-link__label">LOUNGE BAR</span>
+                            </a>
+                        </div>
+                        <div class="gallery_tab_btn">
+                            <a href="#0" class="sm-link sm-link_bg sm-link10 gallery_tab_btn_bg">
+                                <span class="sm-link__label">PARTY</span>
+                            </a>
+                        </div>
+                        <div class="gallery_tab_btn">
+                            <a href="#0" class="sm-link sm-link_bg sm-link10 gallery_tab_btn_bg">
+                                <span class="sm-link__label">CLASS</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery_area_left">
+                        <div class="gallery_img_area">
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content1.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content2.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content3.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content4.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content5.png" alt="갤러리 이미지">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery_area_main">
+                        <div class="gallery_img_area">
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content1.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content2.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content3.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content4.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content5.png" alt="갤러리 이미지">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery_area_right">
+                        <div class="gallery_img_area">
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content1.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content2.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content3.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content4.png" alt="갤러리 이미지">
+                            </div>
+                            <div class="img_area">
+                                <img width="100%" src="img/main_content5.png" alt="갤러리 이미지">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery_left_btn">
+                        <div class="concept_btn1" onclick="conceptPrev();">
+                            <div class="cc_line1"></div>
+                            <div class="cc_line2"></div>
+                        </div>
+                    </div>
+                    <div class="gallery_right_btn">
+                        <div class="concept_btn2" onclick="conceptNext();">
+                            <div class="cc_line2"></div>
+                            <div class="cc_line1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_detail">
+                    <div class="info_detail_left">
+                        <div class="ct1">
+                            <div class="content_title">
+                                탁월한 부티크 하우스
+                            </div>
+                            <div class="content_sub_title">
+                                모던, 부티크, 클래식 등 공간별 색다른 매력과 10미터 책장, 요틀 벽난로 등 <br>
+                                국내에서 보기 드문 럭셔리 인테리어를 만날 수 있는 공간.
+                            </div>
+                        </div>
+                        <div class="ct2">
+                            <div class="ct_title">
+                                시설안내
+                            </div>
+                            <div class="ct_content">
+                                1 벽난로 <br>
+                                2 스메그냉장고 <br>
+                                3 빔프로젝터 <br>
+                                4 책장 <br>
+                                5 루프탑
+                            </div>
+                        </div>
+                        <div class="ct3">
+                            <div class="ct3_1">
+                                <div class="ct_title">
+                                    공간유형
+                                </div>
+                                <div class="ct_content">
+                                    공간유형다목적홀 파티룸 공연장
+                                </div>
+                            </div>
+                            <div class="ct3_2">
+                                <div class="ct_title">
+                                    예약시간
+                                </div>
+                                <div class="ct_content">
+                                    예약시간최소 3시간 부터
+                                </div>
+                            </div>
+                            <div class="ct3_3">
+                                <div class="ct_title">
+                                    예약인원
+                                </div>
+                                <div class="ct_content">
+                                    예약인원최소 2명~최대30명
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_detail_right">
+                        <div class="memo_logo">
+                            ALTTAP
+                        </div>
+                        <div class="momo_address">
+                            (12345) 서울특별시 행복길 7 행복타워 5층 507호 <br>
+                            대표전화 : 02-123-1234
+                        </div>
+                        <div class="memo_dotted"></div>
+                        <div class="time_label">
+                            시간대 설정
+                        </div>
+                        <select name="" id="" class="time_select">
+                            <option value="1시간" selected>1시간</option>
+                            <option value="2시간">2시간</option>
+                            <option value="3시간">3시간</option>
+                            <option value="4시간">4시간</option>
+                        </select>
+                        <div class="price_area">
+                            <span>￦</span><span id="price">1,000,000</span>
+                        </div>
+                        <div class="tel_btn">
+                            전화하기
+                        </div>
+                        <div class="res_btn">
+                            바로 예약하기
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner_item">
+                        <div class="banner_img">
+                            <img src="img/banner1.svg" alt="배너 이미지">
+                        </div>
+                        <div class="banner_txt">
+                            주류반입 가능
+                        </div>
+                    </div>
+                    <div class="banner_item">
+                        <div class="banner_img">
+                            <img src="img/banner2.svg" alt="배너 이미지">
+                        </div>
+                        <div class="banner_txt">
+                            마이크
+                        </div>
+                    </div>
+                    <div class="banner_item">
+                        <div class="banner_img">
+                            <img src="img/banner3.svg" alt="배너 이미지">
+                        </div>
+                        <div class="banner_txt">
+                            TV/프로젝터
+                        </div>
+                    </div>
+                    <div class="banner_item">
+                        <div class="banner_img">
+                            <img src="img/banner4.svg" alt="배너 이미지">
+                        </div>
+                        <div class="banner_txt">
+                            취사시설
+                        </div>
+                    </div>
+                    <div class="banner_item">
+                        <div class="banner_img">
+                            <img src="img/banner5.svg" alt="배너 이미지">
+                        </div>
+                        <div class="banner_txt">
+                            의자/테이블
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="f_logo">
+                    <img src="img/logo.svg" alt="로고 이미지">
+                </div>
+                <div class="right_side_bar">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href=""><img src="img/youtube.svg" alt="유튜브 아이콘"></a></li>
+                                <li><a href=""><img src="img/instagram.svg" alt="인스타그램 아이콘"></a></li>
+                                <li><a href=""><img src="img/blog.svg" alt="블로그 아이콘"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:footer_open();" data-hover="사업자정보"><span>사업자정보</span></a>
+                        </li>
+                        <li><a href="javascript:footer_open();" data-hover="오시는길"><span>오시는길</span></a>
+                        </li>
+                        <li><a href="javascript:footer_open();" data-hover="문의하기"><span>문의하기</span></a>
+                        </li>
+                        <li>
+                            <div class="footer_open" onclick="footer_open(); left_menu_close();"></div>
+                            <div class="footer_close" onclick="footer_close();">
+                                <div class="n1"></div>
+                                <div class="n2"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <div class="content_box">
+                        <div class="footer_left_content">
+                            <div class="footer_address">(12345) 서울특별시 행복길 7 행복타워 5층 507호</div>
+                            <div class="footer_info_text">
+                                alttap@alttap.com <br>
+                                팩스 : 02-123-1234 <br>
+                                사업자 등록번호 : 123-12-12345 <br>
+                            </div>
+                            <div class="footer_tel">
+                                <img src="img/footer_tel.svg" alt="전화 아이콘">
+                                <div class="tel_num"> 02-123-1234 </div>
+                            </div>
+                            <div class="kakao_btn">
+                                <img src="img/kakao_img.svg" alt="카카오톡 아이콘">
+                                <a href="">카카오톡 문의하기&nbsp;&nbsp;></a>
+                            </div>
+                            <ul>
+                                <li><a href=""><img src="img/blog.svg" alt="블로그 아이콘"></a></li>
+                                <li><a href=""><img src="img/instagram.svg" alt="인스타그램 아이콘"></a></li>
+                                <li><a href=""><img src="img/youtube.svg" alt="유튜브 아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_right_content">
+                            <img src="img/map_img.png" alt="지도 이미지">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg_txt">
+                    ALTTAB
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="mobile_wrap">
+        <div class="loading_page">
+            <div class="load_icon">
+                <img src="img/load_icon1.svg" width="30px" alt="로딩 아이콘">
+                <div class="load_filter"></div>
+            </div>
+            <div class="load_icon">
+                <img src="img/load_icon2.svg" width="30px" alt="로딩 아이콘">
+                <div class="load_filter"></div>
+            </div>
+            <div class="load_icon">
+                <img src="img/load_icon3.svg" width="30px" alt="로딩 아이콘">
+                <div class="load_filter"></div>
+            </div>
+            <div class="load_icon">
+                <img src="img/load_icon4.svg" width="30px" alt="로딩 아이콘">
+                <div class="load_filter"></div>
+            </div>
+        </div>
+        <div class="wrap">
+            <i class="fas fa-bars menu_open" onclick="left_menu_open();"></i>
+            <div class="menu_close" onclick="left_menu_close();">
+                <div class="n1"></div>
+                <div class="n2"></div>
+            </div>
+            <div class="left_menu_btn_m">
+                <ul class="m_menu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="intro.html">업체소개</a></li>
+                    <li><a href="space.html">공간소개</a></li>
+                    <li><a href="guide.html">이용안내</a></li>
+                    <li><a href="help.html">도움말</a></li>
+                    <li><a href="direction.html">오시는길</a></li>
+                </ul>
+                <ul class="m_menu_link">
+                    <li><a href="">예약하기</a></li>
+                    <li><a href="">예약현황</a></li>
+                </ul>
+                <ul class="m_menu_sns">
+                    <li><a href=""><img width="21" src="img/blog2.svg" alt="블로그 아이콘"></a></li>
+                    <li><a href=""><img width="21" src="img/instagram2.svg" alt="인스타그램 아이콘"></a></li>
+                    <li><a href=""><img width="21" src="img/youtube2.svg" alt="유튜브 아이콘"></a></li>
+                </ul>
+                <div class="menu_logo">
+                    <img src="img/logo3.svg" width="70" alt="로고 이미지">
+                </div>
+            </div>
+            <div class="main_image_m">
+                <img src="img/main_content2.png" height="100%" alt="메인 이미지">
+                <div class="logo">
+                    <h1>
+                        <a href="">
+                            <img src="img/logo.svg" width="72.9" alt="로고 이미지">
+                        </a>
+                    </h1>
+                </div>
+                <div class="main_image_title">SPACE</div>
+            </div>
+            <div class="main_txt_title_m">
+                <div class="black">
+                    ALTTAB
+                </div>
+                <div class="white">
+                    ALTTAB
+                </div>
+            </div>
+            <div class="gallery_area">
+                <div class="gallery_tab">
+                    <!-- <div class="gallery_tab_btn">
+                        <div class="gallery_tab_btn_bg on"></div>
+                        <span>STUDIO</span>
+                    </div>
+                    <div class="gallery_tab_btn">
+                        <div class="gallery_tab_btn_bg"></div>
+                        <span>LOUNGE BAR</span>
+                    </div>
+                    <div class="gallery_tab_btn">
+                        <div class="gallery_tab_btn_bg"></div>
+                        <span>PARTY</span>
+                    </div>
+                    <div class="gallery_tab_btn">
+                        <div class="gallery_tab_btn_bg"></div>
+                        <span>CLASS</span>
+                    </div> -->
+                    <div class="gallery_tab_btn">
+                        <a href="#0" class="sm-link sm-link_bg sm-link10 gallery_tab_btn_bg on">
+                            <span class="sm-link__label">STUDIO</span>
+                        </a>
+                    </div>
+                    <div class="gallery_tab_btn">
+                        <a href="#0" class="sm-link sm-link_bg sm-link10 gallery_tab_btn_bg">
+                            <span class="sm-link__label">LOUNGE BAR</span>
+                        </a>
+                    </div>
+                    <div class="gallery_tab_btn">
+                        <a href="#0" class="sm-link sm-link_bg sm-link10 gallery_tab_btn_bg">
+                            <span class="sm-link__label">PARTY</span>
+                        </a>
+                    </div>
+                    <div class="gallery_tab_btn">
+                        <a href="#0" class="sm-link sm-link_bg sm-link10 gallery_tab_btn_bg">
+                            <span class="sm-link__label">CLASS</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_area_main">
+                    <div class="gallery_img_area">
+                        <div class="img_area">
+                            <img height="100%" src="img/main_content1.png" alt="갤러리 이미지">
+                        </div>
+                        <div class="img_area">
+                            <img height="100%" src="img/main_content2.png" alt="갤러리 이미지">
+                        </div>
+                        <div class="img_area">
+                            <img height="100%" src="img/main_content3.png" alt="갤러리 이미지">
+                        </div>
+                        <div class="img_area">
+                            <img height="100%" src="img/main_content4.png" alt="갤러리 이미지">
+                        </div>
+                        <div class="img_area">
+                            <img height="100%" src="img/main_content5.png" alt="갤러리 이미지">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_left_btn">
+                    <div class="concept_btn1" onclick="conceptPrev();">
+                        <div class="cc_line1"></div>
+                        <div class="cc_line2"></div>
+                    </div>
+                </div>
+                <div class="gallery_right_btn">
+                    <div class="concept_btn2" onclick="conceptNext();">
+                        <div class="cc_line2"></div>
+                        <div class="cc_line1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="info_detail_m">
+                <div class="info_detail_left">
+                    <div class="ct1">
+                        <div class="content_title">
+                            탁월한 부티크 하우스
+                        </div>
+                        <div class="content_sub_title">
+                            모던, 부티크, 클래식 등 공간별 색다른 매력과 <br>
+                            10미터 책장, 요틀 벽난로 등 국내에서 보기 드문 <br>
+                            럭셔리 인테리어를 만날 수 있는 공간.
+                        </div>
+                    </div>
+                    <div class="ct2">
+                        <div class="ct_title">
+                            시설안내
+                        </div>
+                        <div class="ct_content">
+                            1 벽난로 <br>
+                            2 스메그냉장고 <br>
+                            3 빔프로젝터 <br>
+                            4 책장 <br>
+                            5 루프탑
+                        </div>
+                    </div>
+                    <div class="ct3">
+                        <div class="ct3_1">
+                            <div class="ct_title">
+                                공간유형
+                            </div>
+                            <div class="ct_content">
+                                공간유형다목적홀 파티룸 공연장
+                            </div>
+                        </div>
+                        <div class="ct3_2">
+                            <div class="ct_title">
+                                예약시간
+                            </div>
+                            <div class="ct_content">
+                                예약시간최소 3시간 부터
+                            </div>
+                        </div>
+                        <div class="ct3_3">
+                            <div class="ct_title">
+                                예약인원
+                            </div>
+                            <div class="ct_content">
+                                예약인원최소 2명~최대30명
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_detail_right">
+                    <div class="memo_logo">
+                        ALTTAP
+                    </div>
+                    <div class="momo_address">
+                        (12345) 서울특별시 행복길 7 행복타워 5층 507호 <br>
+                        대표전화 : 02-123-1234
+                    </div>
+                    <div class="memo_dotted"></div>
+                    <div class="time_label">
+                        시간대 설정
+                    </div>
+                    <div class="select_box">
+                        <select name="" id="" class="time_select">
+                            <option value="1시간" selected>1시간</option>
+                            <option value="2시간">2시간</option>
+                            <option value="3시간">3시간</option>
+                            <option value="4시간">4시간</option>
+                        </select>
+                    </div>
+                    <div class="price_area">
+                        <span>￦</span><span id="price">1,000,000</span>
+                    </div>
+                    <div class="tel_btn">
+                        전화하기
+                    </div>
+                    <div class="res_btn">
+                        바로 예약하기
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner_item">
+                    <div class="banner_img">
+                        <img src="img/banner1.svg" alt="배너 이미지">
+                    </div>
+                    <div class="banner_txt">
+                        주류반입 가능
+                    </div>
+                </div>
+                <div class="banner_item">
+                    <div class="banner_img">
+                        <img src="img/banner2.svg" alt="배너 이미지">
+                    </div>
+                    <div class="banner_txt">
+                        마이크
+                    </div>
+                </div>
+                <div class="banner_item">
+                    <div class="banner_img">
+                        <img src="img/banner3.svg" alt="배너 이미지">
+                    </div>
+                    <div class="banner_txt">
+                        TV/프로젝터
+                    </div>
+                </div>
+                <div class="banner_item">
+                    <div class="banner_img">
+                        <img src="img/banner4.svg" alt="배너 이미지">
+                    </div>
+                    <div class="banner_txt">
+                        취사시설
+                    </div>
+                </div>
+                <div class="banner_item">
+                    <div class="banner_img">
+                        <img src="img/banner5.svg" alt="배너 이미지">
+                    </div>
+                    <div class="banner_txt">
+                        의자/테이블
+                    </div>
+                </div>
+            </div>
+            <div class="footer_m">
+                <div class="footer_logo">
+                    <img src="img/logo.svg" alt="로고 이미지">
+                </div>
+                <div class="f_txt">
+                    개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업소안내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;채용정보&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;고객문의
+                    <br>
+                    (12345) 서울특별시 행복길 7 행복타워 5층 507호 <br>
+                    대표전화 : 02-123-1234 팩스 : 02-123-1234 사업자 등록번호 : 123-12-12345
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script src="js/space_detail.js"></script>
+<script src="js/common.js"></script>
+<script src="https://kit.fontawesome.com/c3089a3225.js" crossorigin="anonymous"></script>
+
+</html>

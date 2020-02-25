@@ -1,0 +1,983 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 5.46875vw;
+    background-color: #fff;
+    z-index: 100;
+}
+
+header a {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.logo {
+    position: absolute;
+    top: 1.48438vw;
+    left: 3.75%;
+    width: 254px;
+    height: 31px;
+    z-index: 101;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+.slogan {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 1.79688vw;
+    padding-bottom: 0.78125vw;
+    z-index: 99;
+    transition: all 0.5s;
+    height: 25px;
+    font-family: JosefinSans;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.menu {
+    position: relative;
+    padding-top: 2.03125vw;
+    top: 4.84375vw;
+    width: 100%;
+    height: 5.46875vw;
+    z-index: 100;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.menu.hidden {
+    top: 0;
+}
+
+.menu_box {
+    width: 500px;
+    line-height: 1;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.04em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu_box>li {
+    position: relative;
+    float: left;
+    margin: 0vw 15px;
+    z-index: 1001;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+.bar {
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #000;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.2s;
+}
+
+.menu_box>li:hover .bar {
+    width: 100%;
+}
+
+.main_image {
+    width: 100%;
+    height: 37.82vw;
+    position: absolute;
+    margin-top: 10.9375vw;
+    overflow: hidden;
+    transition: all 0.8s;
+    background-image: url(../img/cb_detail_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 767.7px) {
+    .main_image {
+        margin-top: 74px;
+        width: 100%;
+        height: 37.82vw;
+        background-image: url(../img/cb_detail_2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.main_txt {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0% 3.75%;
+    margin: 0 auto;
+    padding-top: 50vw;
+}
+
+.main_txt .title {
+    margin: 0vw 1.25vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.9vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+.main_txt .desc {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.175vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin: 0vw 1.25vw;
+    padding-top: 1.5625vw;
+}
+
+.main_list {
+    width: 100%;
+    max-width: 1024px;
+    height: 45vw;
+    margin: 0 auto;
+    margin-top: -4vw;
+}
+
+.item {
+    width: 45%;
+    float: left;
+    transition: all 0.5s;
+    margin: 0 2.5%;
+}
+
+.item.on {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.item_title {
+    width: 90%;
+    height: 4.3vw;
+    margin-top: 13vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.6vw;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.item_contents {
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+.ic1>div:nth-child(2) {
+    margin-top: 4vw;
+}
+
+.ic1>div:nth-child(3) {
+    margin-top: 0.5vw;
+    font-size: 18px;
+}
+
+.ic1>div:nth-child(4) {
+    margin-top: 4vw;
+}
+
+.ic1>div:nth-child(5) {
+    margin-top: 0.5vw;
+    font-size: 18px;
+}
+
+.ic2>div:nth-child(3) {
+    margin-top: 4vw;
+}
+
+.ic2>div:nth-child(4) {
+    margin-top: 4vw;
+}
+
+footer {
+    margin-top: 20vw;
+}
+
+.copy {
+    margin-left: 5px;
+    width: 409px;
+    height: 19px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+.copy a {
+    text-decoration: underline;
+}
+
+.info {
+    font-size: 1.09vw;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 0.5vw;
+}
+
+.info * {
+    color: #888;
+    text-decoration: underline;
+}
+
+.btn {
+    position: absolute;
+    right: 4vw;
+    z-index: 1000;
+}
+
+.btn>* {
+    float: left;
+}
+
+.lang {
+    position: absolute;
+    width: 3vw;
+    margin-top: 1.8vw;
+    right: -1vw;
+    height: 2vw;
+}
+
+.m_util {
+    display: none;
+}
+
+.m_menu {
+    position: absolute;
+    top: 4vw;
+    left: 4%;
+    font-size: 5vw;
+}
+
+.chatbot {
+    width: 100%;
+}
+
+.chatbot_title {
+    width: 575px;
+    height: 25px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.chatbot_title>div {
+    float: left;
+}
+
+.big {
+    width: 30px;
+    margin-top: -1vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.cb_title_txt {
+    width: 34vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.63vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.chatbot_bar {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 40vw;
+    height: 0.5vw;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+}
+
+.chatbot_contents {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.chatbot_contents>div {
+    width: 45.7vw;
+    height: 3.6vw;
+    position: relative;
+    margin-top: 34px;
+}
+
+.chatbot_contents>div>div {
+    float: left;
+    position: absolute;
+}
+
+.chatbot_contents>div>div:first-child {
+    text-align: left;
+    width: 154px;
+    height: 55px;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #e0e0e0;
+    background-color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 55px;
+    letter-spacing: normal;
+    padding-left: 20px;
+    color: #2e2e2e;
+}
+
+.chatbot_contents>div>div:last-child {
+    margin-left: 200px;
+    height: 3.6vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5vw;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+.main_list_bg {
+    width: 100%;
+    height: 45vw;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.m_main_list_bg {
+    width: 100%;
+    height: 45vw;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.contact_btn {
+    margin-top: 80px !important;
+    margin: 0 auto;
+    width: 650px !important;
+    height: 3.6vw;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #2f2f2f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4vw;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.chat_bar {
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 90vw;
+    height: 1px;
+    background-color: #000;
+}
+
+.contact_btn:hover {
+    text-decoration: underline;
+}
+
+.pay_title {
+    padding-top: 87.5px;
+    margin: 0 auto;
+    width: 19vw;
+    height: 31px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.2vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.vat {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 19vw;
+    height: 31px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.2vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.won {
+    margin: 0 auto;
+    margin-top: 88px;
+    width: 42vw;
+}
+
+.won>div {
+    margin: 0 2vw;
+    float: left;
+    width: 10vw;
+    height: 3.6vw;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #e0e0e0;
+    background-color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.8vw;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0f72e6;
+    cursor: pointer;
+}
+
+.f_logo {
+    width: 153px;
+    height: 19px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        height: 12.8vw;
+    }
+    .logo {
+        position: absolute;
+        top: 4vw;
+        left: 12vw;
+        width: 42.3vw;
+        height: 6vw;
+        font-size: 4vw !important;
+    }
+    .menu {
+        display: none;
+    }
+    .slogan {
+        display: none;
+    }
+    .m_util {
+        display: block;
+    }
+    .main_txt {
+        padding: 0% 5.75%;
+        padding-top: 60vw;
+    }
+    .main_txt .title {
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e2e2e;
+    }
+    .main_txt .desc {
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e2e2e;
+        padding-top: 3.5625vw;
+    }
+    .main_txt .date {
+        font-size: 3.73333vw;
+        left: 7%;
+        padding-top: 13vw;
+    }
+    .main_list {
+        margin-top: 15vw;
+        height: 90vw;
+    }
+    .item {
+        width: 90%;
+        margin-left: 5% !important;
+        padding-bottom: 5vw;
+    }
+    .item>div {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .item_title {
+        margin-top: 0;
+        width: 339px;
+        height: 42px;
+        line-height: 44px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px #e6e6e6;
+        background-color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 44px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e2e2e;
+    }
+    .item_contents {
+        width: 320px;
+        height: 133px;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e2e2e;
+        margin-top: 18px;
+    }
+    footer {
+        margin-top: 110vw;
+    }
+    .f_logo {
+        font-size: 4vw;
+        margin-left: 5px;
+    }
+    .copy {
+        left: 5vw;
+        width: 260px;
+        font-size: 12px;
+    }
+    .info {
+        font-size: 2.93333vw;
+    }
+    .m_x {
+        display: none;
+    }
+    .m_open_menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        transition: all 0.5s;
+        margin-left: -100vw;
+        z-index: 101;
+    }
+    .m_slogan {
+        position: absolute;
+        top: 28vw;
+        right: 4vw;
+        width: 5.06667vw;
+        height: 88vw;
+    }
+    .main_list_bg {
+        background: none;
+    }
+    .m_menulist {
+        padding: 0vw 12vw;
+        width: 100%;
+        height: 100%;
+    }
+    .m_category {
+        padding-top: 27.46667vw;
+    }
+    .m_category_list {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 6.4vw;
+        line-height: 1;
+    }
+    .m_category_list>li {
+        position: relative;
+        margin-bottom: 14.53333vw;
+        display: block;
+    }
+    .menu_close {
+        position: absolute;
+        top: 0vw;
+        right: 0vw;
+        width: 12vw;
+        height: 12vw;
+        padding: 1vw 2vw;
+    }
+    .menu_close i {
+        font-size: 11vw;
+    }
+    .chatbot_contents {
+        margin-top: 10vw;
+        width: 100%
+    }
+    .big {
+        font-size: 61px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e2e2e;
+    }
+    .part>div:first-child {
+        width: 340px !important;
+        height: 39px !important;
+        line-height: 39px !important;
+        margin: 0 auto;
+        border-radius: 28px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px #e0e0e0;
+        background-color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: center !important;
+        padding-left: 0;
+        color: #2e2e2e;
+    }
+    .m_main_list_bg {
+        height: 183px;
+        position: absolute;
+        margin-top: -120px;
+        z-index: -1;
+        display: block;
+    }
+    .part {
+        width: 340px !important;
+        height: 100px !important;
+        margin: 0 auto;
+    }
+    .part>div:nth-child(2) {
+        font-size: 1px !important;
+        margin-left: 18vw !important;
+    }
+    .chatbot_title {
+        width: 240px;
+        position: relative;
+    }
+    .part>div:last-child {
+        width: 323px !important;
+        margin-left: 50% !important;
+        transform: translateX(-50%);
+        margin-top: 63px !important;
+        text-align: center !important;
+        font-size: 12px !important;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e2e2e;
+    }
+    .contact_btn {
+        width: 340px !important;
+        height: 46px !important;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 1px !important;
+        line-height: 8.5vw;
+        margin-top: 30vw !important;
+        font-size: 14px !important;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 46px !important;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    .won {
+        width: 160px;
+    }
+    .big {
+        width: 20px;
+    }
+    .big:first-child {
+        position: absolute;
+    }
+    .won>div {
+        margin-top: 47px;
+        width: 154px;
+        height: 55px;
+        border-radius: 28px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px #e0e0e0;
+        background-color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 55px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0f72e6;
+    }
+    .cb_title_txt {
+        width: 200px !important;
+        font-size: 0 !important;
+        margin-left: 20px;
+    }
+    .cb_title_txt:after {
+        width: 200px;
+        height: 46px;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e2e2e;
+        content: "챗봇 개발을 위해\a 아래의 사항을 준비해주세요";
+        white-space: pre;
+        display: block;
+    }
+    .chatbot_contents>div>div>div:last-child {
+        text-align: center !important;
+    }
+    .chatbot {
+        margin-top: 400px !important;
+    }
+    .chatbot_bar {
+        width: 240px !important;
+        height: 4px;
+    }
+    .login {
+        top: 9px !important;
+        right: 9px !important;
+    }
+}
+
+.chatbot_bar {
+    margin-top: 10px;
+    width: 585px;
+}
+
+.cb_title_txt {
+    width: 515px;
+    height: 46px;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.chatbot {
+    margin-top: 250px;
+}
+
+.chat_bar {
+    margin-top: 10vw;
+}
+
+.pay_title {
+    width: 210px;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.vat {
+    width: 210px;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.won {
+    margin-top: 10vw;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.ic1>div:nth-child(3) {
+    font-size: 14px !important;
+}
+
+.ic1>div:nth-child(5) {
+    font-size: 14px !important;
+}
+
+.chatbot_contents>div>div>div:last-child {
+    margin-top: 10px;
+    width: 340px;
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+.login {
+    position: absolute;
+    top: 2vw;
+    right: 4vw;
+    width: 77px;
+    height: 31px;
+    border-radius: 16px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 31px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.user_menu {
+    position: absolute;
+    top: 28px;
+    right: 26px;
+    z-index: 100;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+@media only screen and (max-width: 767.7px) {
+    .user_menu {
+        top: 10px !important;
+        right: 10px !important;
+        font-size: 12px !important;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e2e2e;
+    }
+}
